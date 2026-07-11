@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0C7779;
+}
+
+a {
+    text-decoration: none;
+    color: #0C7779;
+}
+
+a:hover {
+    color: #0B2D72;
+}
+
+.form-control {
+    border-radius: 12px;
+}
+
+/* لا تُلغِ زوايا مجموعات الإدخال — Bootstrap يحدد الزوايا الخارجية فقط (مهم لـ RTL) */
+.input-group .form-control {
+    border-radius: 0;
+}
+
+.form-control:focus {
+    border-color: #0C7779 !important;
+    box-shadow: 0 0 0 4px rgba(111, 164, 175, 0.25);
+
+}
+
+.input-group-text {
+    background: linear-gradient(145deg, #0C7779, #0C7779);
+    height: 40px;
+}
+.bi{
+    color: white;
+}
+
+.btn {
+    background: linear-gradient(145deg, #0C7779, #5d8e99);
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    /* لزيادة حجم الزر عند وضع الماوس عليه*/
+}
+
+ 

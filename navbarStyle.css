@@ -1,0 +1,73 @@
+.navbar {
+            background-color: #0C7779;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            color: white !important;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.9) !important;
+            font-weight: 500;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #ECE7D1;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link:hover {
+            color: #ECE7D1 !important;
+        }
+
+        .btn-login {
+            background-color: #ECE7D1 !important;
+            color: #0C7779 !important;
+            border-radius: 20px;
+            padding: 8px 25px !important;
+            font-weight: bold;
+        }
+
+        .lang-switcher .btn-lang {
+            color: rgba(255, 255, 255, 0.95) !important;
+            border: 1px solid rgba(255, 255, 255, 0.5) !important;
+            background: transparent;
+            font-weight: 600;
+            border-radius: 8px !important;
+            padding: 0.35rem 0.65rem !important;
+        }
+
+        .lang-switcher .btn-lang:hover {
+            color: #0C7779 !important;
+            background: rgba(236, 231, 209, 0.95) !important;
+            border-color: #ECE7D1 !important;
+        }
+
+        .lang-switcher .btn-lang.active {
+            background: #ECE7D1 !important;
+            color: #0C7779 !important;
+            border-color: #ECE7D1 !important;
+        }
